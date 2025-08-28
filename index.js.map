@@ -1,1 +1,1 @@
-{"version":3,"file":"index.js","sources":[],"sourcesContent":[],"names":[],"mappings":""}
+{"version":3,"file":"index.js","sources":["../src/js/menu.js","../src/js/modal.js"],"sourcesContent":["console.log('menu');\n","console.log('modal');\n"],"names":[],"mappings":"ssBAAA,QAAQ,IAAI,MAAM,ECAlB,QAAQ,IAAI,OAAO"}
