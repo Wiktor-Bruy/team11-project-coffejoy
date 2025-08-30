@@ -1,11 +1,11 @@
 {
-  "name": "team11-project-coffejoy",
+  "name": "webee-project",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/team11-project-coffejoy/",
+    "build": "vite build --base=/webee-project/",
     "preview": "vite preview"
   },
   "devDependencies": {
