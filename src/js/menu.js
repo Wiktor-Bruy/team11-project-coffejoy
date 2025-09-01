@@ -5,17 +5,17 @@
     //Додавання атрибута на кнопку закриття меню
     closeMenuBtn: document.querySelector('[data-menu-close]'),
     //Додавання атрибута на About us
-    closeMenuLinkAb: document.querySelector('[data-menu-close]'),
+    closeMenuLinkAb: document.querySelector('[data-menu-close-a]'),
     //Додавання атрибута на Benefits
-    closeMenuLinkBen: document.querySelector('[data-menu-close]'),
+    closeMenuLinkBen: document.querySelector('[data-menu-close-b]'),
     //Додавання атрибута на Gallery
-    closeMenuLinkGal: document.querySelector('[data-menu-close]'),
+    closeMenuLinkGal: document.querySelector('[data-menu-close-g]'),
     //Додавання атрибута на Testimonial
-    closeMenuLinkTes: document.querySelector('[data-menu-close]'),
+    closeMenuLinkTes: document.querySelector('[data-menu-close-t]'),
     //Додавання атрибута на Location
-    closeMenuLinkLoc: document.querySelector('[data-menu-close]'),
+    closeMenuLinkLoc: document.querySelector('[data-menu-close-loc]'),
     //Додавання атрибута на Logo
-    closeMenuLinkLogo: document.querySelector('[data-menu-close]'),
+    closeMenuLinkLogo: document.querySelector('[data-menu-close-logo]'),
     //Додавання атрибута на бекдроп меню
     menu: document.querySelector('[data-menu]'),
   };

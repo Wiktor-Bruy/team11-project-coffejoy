@@ -43,13 +43,16 @@
   position: absolute;
   top: 24px;
   right: 24px;
-  transition: background-color 250ms ease-in-out, opacity 250ms ease-in-out;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-close-btn:hover {
+.modal-close-btn:hover,
+.modal-close-btn:focus {
   opacity: 0.5;
 }
-.modal-close-btn:focus {
+.modal-close-btn:active {
   background-color: var(--opacity-neutral-darkest-10);
+  opacity: 1;
 }
 .modal-title {
   font-family: var(--second-family);
@@ -85,13 +88,16 @@
   font-weight: 500;
   line-height: 1.5;
   color: var(--color-white);
-  transition: box-shadow 250ms ease-in-out, opacity 250ms ease-in-out;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-btn-down:hover {
+.modal-btn-down:hover,
+.modal-btn-down:focus {
   opacity: 0.5;
 }
-.modal-btn-down:focus {
+.modal-btn-down:active {
   box-shadow: none;
+  opacity: 1;
 }
 
 /*-------------------------------------Tablet-----------------------------------------------*/
