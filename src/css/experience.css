@@ -31,6 +31,7 @@ img {
 }
 
 .experience-section-title {
+  font-family: 'Aboreto', sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 1.2;
@@ -57,7 +58,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
-  justify-content: flex-start;
+  justify-content: center;
   flex-direction: row;
   gap: 24px;
   border-radius: 32px;
@@ -77,6 +78,7 @@ img {
 }
 @media screen and (min-width: 1440px) {
   .experience-lists {
+    justify-content: flex-start;
     flex-direction: column;
     flex-basis: calc((100% - 64px) / 3);
     height: 948px;
