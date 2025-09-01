@@ -1,3 +1,114 @@
 .quality {
-  background-color: chartreuse;
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.quality-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.quality-text-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  margin-bottom: 16px;
+}
+
+.quality-main-title {
+  font-family: "Aboreto", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 120%;
+  letter-spacing: -0.01em;
+  margin-bottom: 24px;
+}
+
+.quality-description-text {
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.quality-list {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.quality-item {
+  width: 100%;
+}
+
+.quality-image {
+  width: 100%;
+  display: block;
+  border-radius: 32px;
+}
+
+.quality-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  margin-top: 32px;
+  margin-bottom: 8px;
+}
+
+.quality-text {
+  line-height: 150%;
+}
+
+
+@media screen and (min-width: 768px) {
+  .quality-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .quality-item {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .quality-item:last-child {
+    width: 100%;
+  }
+
+  .quality-text-atmosphere {
+    width: 440px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+@media screen and (min-width: 1440px) {
+ 
+  .quality-description {
+    width: 768px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .quality-main-title {
+    font-size: 48px;
+  }
+
+  .quality-item {
+    width: calc((100% - 48px) / 3);
+  }
+
+  .quality-item:last-child {
+    width: calc((100% - 48px) / 3);
+  }
+
+  .quality-text-atmosphere {
+    width: 421px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
