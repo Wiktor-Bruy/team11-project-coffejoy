@@ -33,10 +33,10 @@
   border-radius: 100px;
   width: 48px;
   height: 48px;
-  transition: opacity 250ms ease-in-out;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mobile-close-btn-icon {
-  fill: #0b0803;
+  fill: var(--color-scheme-2-text);
   display: block;
 }
 .mobile-close-btn:hover,
@@ -52,7 +52,7 @@
   left: 16px;
 }
 .logo-icon {
-  fill: #0b0803;
+  fill: var(--color-scheme-2-text);
 }
 .mobile-list {
   display: flex;
