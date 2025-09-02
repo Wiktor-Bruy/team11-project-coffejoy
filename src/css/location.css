@@ -1,3 +1,112 @@
 .location {
-  background-color: brown;
+  background-color: #e0cbb4;
+  padding: 64px 0;
+}
+.location-find {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #0b0803;
+  padding-bottom: 16px;
+}
+.location-title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: #0b0803;
+  padding-bottom: 24px;
+  font-family: 'Aboreto', sans-serif;
+}
+.location-text {
+  font-family: 'Quicksand' normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #0b0803;
+  padding-bottom: 40px;
+}
+.location-item {
+  padding-bottom: 40px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 8px;
+}
+.location-icon {
+  margin-bottom: 16px;
+}
+.text-item {
+  font-family: 'Aboreto', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+  color: #0b0803;
+  margin-bottom: 8px;
+}
+.location-address {
+  font-family: 'Quicksand' normal;
+  text-decoration: underline;
+}
+.location-address-link {
+  font-family: 'Quicksand' normal;
+  max-width: auto;
+}
+.location-info {
+  margin-bottom: 16px;
+}
+.buttom-location {
+  display: flex;
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: #0b0803;
+  background-color: #e0cbb4;
+  margin-bottom: 32px;
+}
+.map-location {
+  width: 288px;
+  height: 307px;
+  border-radius: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .location-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .buttom-location {
+    margin-left: auto;
+  }
+  .location-address-link {
+    max-width: 208px;
+  }
+  .map-location {
+    width: 704px;
+    height: 377px;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .location-info {
+    margin-right: 24px;
+  }
+  .location-conteiner {
+    display: flex;
+  }
+  .location-list {
+    display: inline-block;
+  }
+  .buttom-location {
+    margin: 0;
+  }
+  .map-location {
+    margin-left: auto;
+    width: 869px;
+    height: 697px;
+  }
 }
