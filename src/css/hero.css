@@ -1,3 +1,105 @@
+/*-------------------------------------------Mobile----------------------------------------------*/
 .hero {
-  background-color: blue;
+  background-image: url('/img/hero/hero-mobile-min.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 375px;
+  margin: 0 auto;
+}
+.hero-container {
+  padding-top: 108.5px;
+  padding-bottom: 108.5px;
+}
+@media (min-resolution: 192dpi) {
+  .hero {
+    background-image: url('/img/hero/hero-mobile@2x-min.jpg');
+  }
+}
+.hero-title {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: var(--color-white);
+  margin-bottom: 24px;
+}
+.description {
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--color-white);
+  margin-bottom: 32px;
+}
+.hero-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 135px;
+  height: 44px;
+  border-radius: 100px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--color-white);
+  box-shadow: 0 1px 2px 0 var(--opacity-neutral-darkest-5),
+    inset 0 -2px 1px 0 rgba(0, 0, 0, 0.2),
+    inset 0 0 0 1px var(--opacity-neutral-darkest-15),
+    inset 0 2px 1px 0 rgba(255, 255, 255, 0.25),
+    inset 0 32px 24px 0 var(--opacity-white-5);
+  background: var(--color-coffee-dark);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero-button:focus,
+.hero-button:hover {
+  opacity: 0.5;
+}
+.hero-button:active {
+  opacity: 1;
+  box-shadow: none;
+}
+@media (min-width: 376px) {
+  .hero {
+    background-image: url('/img/hero/hero-tab-min.jpg');
+    max-width: 768px;
+  }
+  @media (min-resolution: 192dpi) {
+    .hero {
+      background-image: url('/img/hero/hero-tab@2x-min.jpg');
+    }
+  }
+}
+
+/*-------------------------------------------Tablet----------------------------------------------*/
+@media (min-width: 768px) {
+  .hero-container {
+    padding-top: 311.5px;
+    padding-bottom: 311.5px;
+  }
+  .hero-title,
+  .description {
+    max-width: 560px;
+  }
+}
+@media (min-width: 769px) {
+  .hero {
+    background-image: url('/img/hero/hero-desk-min.jpg');
+    max-width: 1440px;
+  }
+  @media (min-resolution: 192dpi) {
+    .hero {
+      background-image: url('/img/hero/hero-desk@2x-min.jpg');
+    }
+  }
+}
+
+/*-------------------------------------------Desktop----------------------------------------------*/
+@media (min-width: 1440px) {
+  .hero-container {
+    padding-top: 259px;
+    padding-bottom: 259px;
+  }
+  .hero-title {
+    font-size: 56px;
+  }
 }
