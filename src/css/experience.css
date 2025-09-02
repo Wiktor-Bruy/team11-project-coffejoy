@@ -1,12 +1,8 @@
-img {
-  display: block;
-  height: auto;
+.experience-list-item {
   border-radius: 32px;
-  min-width: 200px;
+  overflow: hidden;
 }
 .experience-section {
-  margin: 0 auto;
-  background-color: #e0cbb4;
   padding: 64px 0;
 }
 .experience-container {
@@ -37,7 +33,6 @@ img {
   line-height: 1.2;
   letter-spacing: -0.01em;
   text-align: center;
-  color: #0b0803;
   text-transform: uppercase;
 }
 @media screen and (min-width: 1440px) {
@@ -47,11 +42,9 @@ img {
 }
 .experience-text {
   font-family: 'Quicksand', sans-serif;
-  font-weight: 400;
   font-size: 18px;
   line-height: 1.5;
   text-align: center;
-  color: #0b0803;
 }
 .experience-lists {
   width: 100%;
@@ -61,13 +54,6 @@ img {
   justify-content: center;
   flex-direction: row;
   gap: 24px;
-  border-radius: 32px;
-}
-@media screen and (min-width: 375px) {
-  .experience-lists {
-    min-width: 288px;
-    gap: 24px;
-  }
 }
 
 @media screen and (min-width: 768px) {
