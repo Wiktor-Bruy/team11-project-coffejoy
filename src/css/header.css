@@ -2,7 +2,8 @@
   background-color: #e0cbb4;
   color: #0b0803;
   padding: 18px 0px;
-  position: relative;
+  position: fixed;
+  width: 100%;
 }
 
 .navigation {
@@ -14,6 +15,11 @@
 .logo {
   display: block;
   fill: #0b0803;
+}
+
+.logo:hover,
+.logo:focus {
+  opacity: 0.5; 
 }
 
 .navigation-list {
@@ -49,6 +55,10 @@
 }
 
 @media screen and (min-width: 768px) {
+  .header {
+    position: relative;
+  }
+  
   .mobile-menu-btn {
     display: none;
   }
