@@ -8,18 +8,22 @@
 
 .navigation {
   display: flex;
-  align-items: center; 
+  align-items: center;
   justify-content: space-between;
 }
 
 .logo {
   display: block;
   fill: #0b0803;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo:hover,
 .logo:focus {
-  opacity: 0.5; 
+  opacity: 0.5;
+}
+.logo:active {
+  opacity: 0.7;
 }
 
 .navigation-list {
@@ -37,7 +41,7 @@
 
 .navigation-list-item-link:hover,
 .navigation-list-item-link:focus {
-  opacity: 0.5; 
+  opacity: 0.5;
 }
 
 .mobile-menu-btn {
@@ -50,15 +54,11 @@
   fill: #2f2f37;
 }
 
-.mobile-menu-btn.is-open .mobile-menu-btn-icon {
-  display: none;
-}
-
 @media screen and (min-width: 768px) {
   .header {
     position: relative;
   }
-  
+
   .mobile-menu-btn {
     display: none;
   }
