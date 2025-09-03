@@ -45,7 +45,10 @@
 }
 
 .mobile-menu-btn {
-  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
   border: none;
   background-color: transparent;
 }
