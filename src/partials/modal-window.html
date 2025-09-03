@@ -10,7 +10,7 @@
       Fresh brews, special offers, and cozy updates are coming your way.
     </p>
     <div class="modal-image-box">
-      <picture class="modal-image">
+      <picture class="modal-image" loading="lazy">
         <source
           media="(min-width: 1440px)"
           srcset="
@@ -32,7 +32,11 @@
             /img/modal-menu/modal-mob@2x.jpg 2x
           "
         />
-        <img src="/img/modal-menu/modal-desk.jpg" alt="image for welcome" />
+        <img
+          src="/img/modal-menu/modal-desk.jpg"
+          alt="image for welcome"
+          loading="lazy"
+        />
       </picture>
     </div>
     <button class="modal-btn-down modal-btn" type="button" data-modal-close>

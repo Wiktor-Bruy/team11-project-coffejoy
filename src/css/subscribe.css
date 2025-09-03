@@ -48,11 +48,41 @@
 .subscribe-email:active::placeholder {
   color: transparent;
 }
+.subscribe-email:not(:placeholder-shown):invalid {
+  border-color: var(--color-error-red);
+}
+.subscribe-email:not(:placeholder-shown):valid {
+  border-color: var(--opacity-neutral-darkest-15);
+}
+.subscribe-text-valid,
+.subscribe-text-invalid {
+  position: absolute;
+  left: 12px;
+  bottom: -18px;
+  font-size: 12px;
+  line-height: 1.5;
+  display: none;
+}
+.subscribe-text-valid {
+  color: green;
+}
+.subscribe-text-invalid {
+  color: var(--color-error-red);
+}
+.subscribe-email:not(:placeholder-shown):valid ~ .subscribe-text-valid {
+  display: block;
+}
+.subscribe-email:not(:placeholder-shown):invalid ~ .subscribe-text-invalid {
+  display: block;
+}
 .subscribe-email:user-invalid {
   border-color: var(--color-error-red);
 }
 .subscribe-email:user-invalid::placeholder {
   color: var(--color-error-red);
+}
+.subscribe-email-wrap {
+  position: relative;
 }
 
 .subscribe-btn {

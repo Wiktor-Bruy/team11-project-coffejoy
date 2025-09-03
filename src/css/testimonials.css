@@ -47,12 +47,6 @@
   font-size: 18px;
   line-height: 1.5;
 }
-/* .testimonials-text::before {
-  content: '&#10077';
-}
-.testimonials-text::after {
-  content: '&#x275E';
-} */
 .testimonials-name {
   font-weight: 600;
   line-height: 1.5;

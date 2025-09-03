@@ -14,8 +14,6 @@
     closeMenuLinkTes: document.querySelector('[data-menu-close-t]'),
     //Додавання атрибута на Location
     closeMenuLinkLoc: document.querySelector('[data-menu-close-loc]'),
-    //Додавання атрибута на Logo
-    closeMenuLinkLogo: document.querySelector('[data-menu-close-logo]'),
     //Додавання атрибута на бекдроп меню
     menu: document.querySelector('[data-menu]'),
   };
@@ -27,7 +25,6 @@
   refs.closeMenuLinkGal.addEventListener('click', togMenu);
   refs.closeMenuLinkTes.addEventListener('click', togMenu);
   refs.closeMenuLinkLoc.addEventListener('click', togMenu);
-  refs.closeMenuLinkLogo.addEventListener('click', togMenu);
 
   function togMenu() {
     refs.menu.classList.toggle('is-open');
