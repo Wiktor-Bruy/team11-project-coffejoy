@@ -39,7 +39,7 @@
   margin-bottom: 8px;
 }
 .location-address {
-  font-family: 'Quicksand' normal;
+  font-family: 'Quicksand', normal;
   text-decoration: underline;
 }
 .location-address,
@@ -57,8 +57,7 @@
   opacity: 0.7;
 }
 .location-address-link {
-  font-family: 'Quicksand' normal;
-  max-width: auto;
+  font-family: 'Quicksand', normal;
 }
 .buttom-location {
   display: flex;
