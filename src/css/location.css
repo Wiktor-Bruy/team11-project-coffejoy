@@ -4,28 +4,31 @@
 .location-find {
   font-weight: 600;
   line-height: 1.5;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
 .location-title {
   font-weight: 400;
   font-size: 36px;
   line-height: 1.2;
   letter-spacing: -0.01em;
-  padding-bottom: 24px;
+  margin-bottom: 24px;
   font-family: 'Aboreto', sans-serif;
 }
 .location-text {
   font-size: 18px;
   line-height: 1.5;
-  padding-bottom: 40px;
+  margin-bottom: 40px;
 }
 .location-item {
-  padding-bottom: 40px;
+  margin-bottom: 40px;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
   gap: 8px;
+}
+.location-item:last-child {
+  margin-bottom: 0;
 }
 .location-icon {
   margin-bottom: 16px;
@@ -78,7 +81,9 @@
 .buttom-location:active {
   opacity: 0.7;
 }
-
+.location-info {
+  margin-bottom: 32px;
+}
 .map-location {
   width: 100%;
   height: 307px;
@@ -91,6 +96,9 @@
     flex-direction: row;
     justify-content: space-between;
   }
+  .location-item {
+    margin-bottom: 0;
+  }
   .location-address-link {
     max-width: 208px;
   }
@@ -102,15 +110,17 @@
 @media screen and (min-width: 1440px) {
   .location-info {
     margin-right: 24px;
+    margin-bottom: 0;
   }
   .location-conteiner {
     display: flex;
   }
+  .location-item:nth-child(1),
+  .location-item:nth-child(2) {
+    margin-bottom: 40px;
+  }
   .location-list {
     display: inline-block;
-  }
-  .buttom-location {
-    margin: 0;
   }
   .map-location {
     margin-left: auto;

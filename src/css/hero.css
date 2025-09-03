@@ -1,15 +1,13 @@
 /*-------------------------------------------Mobile----------------------------------------------*/
 .hero {
+  padding-top: 108px;
+  padding-bottom: 108px;
   background-image: url('/img/hero/hero-mobile-min.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   max-width: 375px;
   margin: 0 auto;
-}
-.hero-container {
-  padding-top: 108.5px;
-  padding-bottom: 108.5px;
 }
 @media (min-resolution: 192dpi) {
   .hero {
@@ -72,9 +70,9 @@
 
 /*-------------------------------------------Tablet----------------------------------------------*/
 @media (min-width: 768px) {
-  .hero-container {
-    padding-top: 311.5px;
-    padding-bottom: 311.5px;
+  .hero {
+    padding-top: 311px;
+    padding-bottom: 311px;
   }
   .hero-title,
   .description {
@@ -95,7 +93,7 @@
 
 /*-------------------------------------------Desktop----------------------------------------------*/
 @media (min-width: 1440px) {
-  .hero-container {
+  .hero {
     padding-top: 259px;
     padding-bottom: 259px;
   }

@@ -1,9 +1,11 @@
+.welcome {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
 .welcome-container {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding-top: 64px;
-  padding-bottom: 64px;
 }
 
 .welcome-info-container {
