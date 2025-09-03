@@ -60,31 +60,24 @@
   font-family: 'Quicksand' normal;
   max-width: auto;
 }
-.location-info {
-  margin-bottom: 16px;
-}
 .buttom-location {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   max-width: 140px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: -0.02em;
   color: #0b0803;
-  margin-bottom: 32px;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .buttom-location:hover,
 .buttom-location:focus {
   opacity: 0.5;
 }
 .buttom-location:active {
-  opacity: 1;
-  background-color: var(--opacity-neutral-darkest-10);
-  border-radius: 100px;
+  opacity: 0.7;
 }
 
 .map-location {
@@ -98,9 +91,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-  }
-  .buttom-location {
-    margin-left: auto;
   }
   .location-address-link {
     max-width: 208px;
@@ -127,5 +117,8 @@
     margin-left: auto;
     width: 869px;
     height: 697px;
+  }
+  .location-address-link {
+    max-width: 100%;
   }
 }
