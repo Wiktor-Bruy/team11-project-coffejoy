@@ -1,6 +1,65 @@
 <section class="subscribe" id="subscribe">
-  <div class="container">
+  <div class="container subscribe-container">
     <!-- тут структура секції -->
-    subscribe
+    <div class="subscribe-content-container">
+      <h2 class="subscribe-title">Join Our Coffee Community</h2>
+      <p class="subscribe-description">
+        Experience the joy of coffee delivered right to your door. Sign up
+        today!
+      </p>
+      <form class="subscribe-form-items">
+        <div class="subscribe-btn-box">
+          <input
+            class="subscribe-email"
+            name="subscribe-email"
+            type="email"
+            id="subscribe-email"
+            placeholder="Your Email Here"
+            required
+          />
+          <button class="subscribe-btn" type="submit">
+            Subscribe
+            <svg class="subscribe-icon" width="24" height="25">
+              <use href="/img/icons.svg#arrow"></use>
+            </svg>
+          </button>
+        </div>
+        <label class="subscribe-rules" for="subscribe-email"
+          >By clicking Get Started, you agree to our Terms and
+          Conditions.</label
+        >
+      </form>
+    </div>
+    <div class="subsribe-img-container">
+      <picture class="subscribeimg" loading="lazy">
+        <source
+          media="(min-width: 1440px)"
+          srcset="
+            /img/subscribe/subscribe-desk-min.jpg    1x,
+            /img/subscribe/subscribe-desk@2x-min.jpg 2x
+          "
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            /img/subscribe/subscribe-tab-min.jpg    1x,
+            /img/subscribe/subscribe-tab@2x-min.jpg 2x
+          "
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            /img/subscribe/subscribe-mob-min.jpg    1x,
+            /img/subscribe/subscribe-mob@2x-min.jpg 2x
+          "
+        />
+        <img
+          class="subscribeimg-img"
+          src="/img/subscribe/subscribe-desk-min.jpg"
+          alt="Office"
+          loading="lazy"
+        />
+      </picture>
+    </div>
   </div>
 </section>
