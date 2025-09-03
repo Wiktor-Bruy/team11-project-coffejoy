@@ -16,7 +16,7 @@
       href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
     />
     <script type="module" crossorigin src="/webee-project/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/webee-project/assets/index-DsnL8vz2.css">
+    <link rel="stylesheet" crossorigin href="/webee-project/assets/index-CVg2WeHA.css">
   </head>
   <body>
     <header class="header" id="header">
@@ -363,9 +363,59 @@
 
 
       <section class="subscribe" id="subscribe">
-  <div class="container">
+  <div class="container subscribe-container">
     <!-- тут структура секції -->
-    subscribe
+    <div class="subscribe-content-container">
+      <h2 class="subscribe-title">Join Our Coffee Community</h2>
+      <p class="subscribe-description">
+        Experience the joy of coffee delivered right to your door. Sign up
+        today!
+      </p>
+      <form class="subscribe-form-items">
+        <div class="subscribe-btn-box">
+          <input
+            class="subscribe-email"
+            name="subscribe-email"
+            type="email"
+            id="subscribe-email"
+            placeholder="Your Email Here"
+            required
+          />
+          <button class="subscribe-btn" type="submit">
+            Subscribe
+            <svg class="subscribe-icon" width="24" height="25">
+              <use href="/webee-project/assets/icons-C69lPebO.svg#arrow"></use>
+            </svg>
+          </button>
+        </div>
+        <label class="subscribe-rules" for="subscribe-email"
+          >By clicking Get Started, you agree to our Terms and
+          Conditions.</label
+        >
+      </form>
+    </div>
+    <div class="subsribe-img-container">
+      <picture class="subscribeimg" loading="lazy">
+        <source
+          media="(min-width: 1440px)"
+          srcset="/webee-project/assets/subscribe-desk-min-Ctdz5-ws.jpg 1x, /webee-project/assets/subscribe-desk@2x-min-BvwhfMk4.jpg 2x"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="/webee-project/assets/subscribe-tab-min-CPHYiAOn.jpg 1x, /webee-project/assets/subscribe-tab@2x-min-Dwqcu5Rn.jpg 2x"
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="/webee-project/assets/subscribe-mob-min-Cidxlvue.jpg 1x, /webee-project/assets/subscribe-mob@2x-min-N882oKZh.jpg 2x"
+        />
+        <img
+          class="subscribeimg-img"
+          src="/webee-project/assets/subscribe-desk-min-Ctdz5-ws.jpg"
+          alt="Office"
+          loading="lazy"
+        />
+      </picture>
+    </div>
   </div>
 </section>
 
