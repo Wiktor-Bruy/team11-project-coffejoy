@@ -1,12 +1,9 @@
 .location {
-  background-color: #e0cbb4;
   padding: 64px 0;
 }
 .location-find {
   font-weight: 600;
-  font-size: 16px;
   line-height: 1.5;
-  color: #0b0803;
   padding-bottom: 16px;
 }
 .location-title {
@@ -14,16 +11,12 @@
   font-size: 36px;
   line-height: 1.2;
   letter-spacing: -0.01em;
-  color: #0b0803;
   padding-bottom: 24px;
   font-family: 'Aboreto', sans-serif;
 }
 .location-text {
-  font-family: 'Quicksand' normal;
-  font-weight: 400;
   font-size: 18px;
   line-height: 1.5;
-  color: #0b0803;
   padding-bottom: 40px;
 }
 .location-item {
@@ -43,21 +36,25 @@
   font-size: 20px;
   line-height: 1.4;
   letter-spacing: -0.01em;
-  color: #0b0803;
   margin-bottom: 8px;
 }
 .location-address {
   font-family: 'Quicksand' normal;
   text-decoration: underline;
 }
-.location-address:hover,
-.location-address:focus {
-  opacity: 0, 7;
-  color: var(--color-neutral-darkest);
+.location-address,
+.location-adr-link {
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.location-address:active {
-  opacity: 1;
-  color: var(--color-neutral-darkest);
+.location-address:hover,
+.location-address:focus,
+.location-adr-link:hover,
+.location-adr-link:focus {
+  opacity: 0.5;
+}
+.location-address:active,
+.location-adr-link:active {
+  opacity: 0.7;
 }
 .location-address-link {
   font-family: 'Quicksand' normal;
@@ -76,14 +73,16 @@
   color: #0b0803;
   background-color: #e0cbb4;
   margin-bottom: 32px;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .buttom-location:hover,
 .buttom-location:focus {
-  opacity: 0, 5;
+  opacity: 0.5;
 }
 .buttom-location:active {
   opacity: 1;
-  background: var(--opacity-neutral-darkest-10);
+  background-color: var(--opacity-neutral-darkest-10);
   border-radius: 100px;
 }
 
