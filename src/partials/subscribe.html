@@ -9,14 +9,20 @@
       </p>
       <form class="subscribe-form-items" id="myForm">
         <div class="subscribe-btn-box">
-          <input
-            class="subscribe-email"
-            name="subscribe-email"
-            type="email"
-            id="subscribe-email"
-            placeholder="Your Email Here"
-            required
-          />
+          <div class="subscribe-email-wrap">
+            <input
+              pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+              )
+              class="subscribe-email"
+              name="subscribe-email"
+              type="email"
+              id="subscribe-email"
+              placeholder="Your Email Here"
+              required
+            />
+            <p class="subscribe-text-valid">Succes!</p>
+            <p class="subscribe-text-invalid">Invalid email, try again</p>
+          </div>
           <button class="subscribe-btn" type="submit" data-modal-open>
             Subscribe
             <svg class="subscribe-icon" width="24" height="25">
