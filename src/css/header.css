@@ -1,8 +1,22 @@
+/*---------------------------------Duyble-header----------------------------------*/
+.header-duoble {
+  display: none;
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  left: 0;
+}
+.header-duoble.is-scrol {
+  display: block;
+}
+
+/*---------------------------------------------------------------------------------*/
+
 .header {
   background-color: #e0cbb4;
   color: #0b0803;
   padding: 18px 0px;
-  position: fixed;
+  /* position: fixed; */
   width: 100%;
   z-index: 8;
 }

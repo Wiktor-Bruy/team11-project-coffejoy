@@ -2,6 +2,8 @@
   const refs = {
     //Додавання атрибута на кнопку відкриття меню
     openMenuBtn: document.querySelector('[data-menu-open]'),
+    //Додавання атрибута на кнопку відкриття меню на другий хедер
+    openMenuBtnDuo: document.querySelector('[data-menu-open-duo]'),
     //Додавання атрибута на кнопку закриття меню
     closeMenuBtn: document.querySelector('[data-menu-close]'),
     //Додавання атрибута на About us
@@ -19,6 +21,7 @@
   };
 
   refs.openMenuBtn.addEventListener('click', togMenu);
+  refs.openMenuBtnDuo.addEventListener('click', togMenu);
   refs.closeMenuBtn.addEventListener('click', togMenu);
   refs.closeMenuLinkAb.addEventListener('click', togMenu);
   refs.closeMenuLinkBen.addEventListener('click', togMenu);
