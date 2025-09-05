@@ -1,20 +1,27 @@
 (() => {
   const refs = {
-    //Додавання атрибута на кнопку відкриття модалки
-    openModalBtn: document.querySelector('[data-modal-open]'),
-    //Додавання атрибута на кнопку закриття модалки
-    closeModalBtn: document.querySelector('[data-modal-close-x]'),
-    //Додавання атрибута на другу центральну кнопку закриття модалки
-    closeModalBtnTwo: document.querySelector('[data-modal-close]'),
-    //Додавання атрибута на бекдроп модалки
+    openModalBtn: document.querySelector('[data-open-modal]'),
+    closeModalBtns: document.querySelectorAll('[data-close-modal]'),
     modal: document.querySelector('[data-modal]'),
+    form: document.querySelector('form'),
   };
 
-  refs.openModalBtn.addEventListener('click', togModal);
-  refs.closeModalBtn.addEventListener('click', togModal);
-  refs.closeModalBtnTwo.addEventListener('click', togModal);
+  refs.openModalBtn.addEventListener('click', function (event) {
+    event.preventDefault();
 
-  function togModal() {
+    if (!refs.form.checkValidity()) {
+      refs.form.reportValidity();
+      return;
+    }
+
+    toggleModal();
+  });
+
+  refs.closeModalBtns.forEach(btn => {
+    btn.addEventListener('click', toggleModal);
+  });
+
+  function toggleModal() {
     refs.modal.classList.toggle('is-open');
   }
 })();
